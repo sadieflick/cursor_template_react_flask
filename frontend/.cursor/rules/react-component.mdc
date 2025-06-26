@@ -1,0 +1,33 @@
+---
+description: React Component Standards and Structure
+globs: 
+  - "src/components/**/*.tsx"
+  - "src/pages/**/*.tsx"
+alwaysApply: false
+---
+
+# React Component Standards
+
+## Component Structure
+React components should follow this standardized structure:
+
+1. **Imports** - External libraries first, then internal imports
+2. **Types/Interfaces** - Component props and local types
+3. **Component Definition** - Functional component with proper typing
+4. **Export** - Named export (preferred over default)
+
+## TypeScript Requirements
+- All components must be properly typed
+- Use `React.FC<Props>` or explicit return type annotation
+- Define props interface above component
+- Avoid `any` type - use proper typing or `unknown`
+
+## Component Guidelines
+- Use functional components with hooks exclusively
+- Keep components focused and single-responsibility
+- Extract complex logic into custom hooks
+- Use descriptive, PascalCase component names
+- Include JSDoc comments for complex components
+
+## Referenced Template
+@component-template.tsx

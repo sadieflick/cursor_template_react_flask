@@ -24,6 +24,8 @@ This document defines the tech stack, project structure, and data models. The AI
 │   │   │   └── ...
 │   │   ├── schemas.py          # Marshmallow schemas for serialization
 │   │   └── services/           # Business logic
+│   ├── .cursor/
+│   │   └── rules/              # Cursor Assistant Rules
 │   ├── migrations/             # Flask-Migrate migration scripts
 │   ├── tests/                  # Pytest tests
 │   ├── .flaskenv
@@ -41,10 +43,14 @@ This document defines the tech stack, project structure, and data models. The AI
 │   │   ├── pages/              # Top-level page components
 │   │   ├── utils/
 │   │   └── App.jsx
+│   ├── .cursor/
+│   │   └── rules/              # Cursor Assistant Rules
 │   ├── .env
 │   ├── index.html
 │   ├── package.json
 │   └── vite.config.js
+
+
 └── .docs/
 ├── AI_INTERACTION_RULES.md
 ├── ARCHITECTURE.md

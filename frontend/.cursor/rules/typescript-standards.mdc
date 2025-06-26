@@ -1,0 +1,27 @@
+---
+description: TypeScript coding standards and best practices
+globs:
+  - "**/*.ts"
+  - "**/*.tsx"
+alwaysApply: true
+---
+
+# TypeScript Standards
+
+## Type Definitions
+- Use `interface` over `type` for object definitions
+- Use `type` for unions, primitives, and computed types
+- Define types close to where they're used
+- Use PascalCase for interface and type names
+
+## Strict TypeScript
+- Enable strict mode in tsconfig.json
+- Avoid `any` type - use `unknown` when type is truly unknown
+- Use type assertions sparingly and with type guards
+- Prefer type narrowing over type assertions
+
+## Function Typing
+- Always type function parameters and return values
+- Use function overloads when necessary
+- Prefer arrow functions for inline functions
+- Use proper typing for async functions

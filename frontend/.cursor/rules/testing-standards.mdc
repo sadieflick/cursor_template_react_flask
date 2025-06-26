@@ -1,0 +1,30 @@
+---
+description: Testing standards for React TypeScript applications
+globs:
+  - "**/*.test.ts"
+  - "**/*.test.tsx"
+  - "**/*.spec.ts"
+  - "**/*.spec.tsx"
+alwaysApply: false
+---
+
+# Testing Standards
+
+## Testing Framework
+- Use Vitest as the primary testing framework
+- Use React Testing Library for component testing
+- Use MSW (Mock Service Worker) for API mocking
+
+## Test Structure
+- Follow AAA pattern: Arrange, Act, Assert
+- Use descriptive test names that explain the expected behavior
+- Group related tests using `describe` blocks
+
+## Component Testing
+- Test user interactions, not implementation details
+- Query elements by role, label, or text (accessibility-first)
+- Mock external dependencies appropriately
+
+## Referenced Templates
+@component-test-template.tsx
+@hook-test-template.ts

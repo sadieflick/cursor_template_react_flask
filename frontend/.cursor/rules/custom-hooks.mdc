@@ -1,0 +1,25 @@
+---
+description: Custom React Hooks Standards and Patterns
+globs:
+  - "src/hooks/**/*.ts"
+  - "src/hooks/**/*.tsx"
+alwaysApply: false
+---
+
+# Custom Hooks Standards
+
+## Hook Naming and Structure
+- Hook names must start with `use` prefix
+- Use descriptive names that indicate the hook's purpose
+- Place hooks in `src/hooks/` directory
+- Export both the hook and its types
+
+## Hook Guidelines
+- Return objects with named properties for multiple values (not arrays)
+- Include proper TypeScript typing for parameters and return values
+- Handle loading states and errors consistently
+- Use proper cleanup in useEffect hooks
+- Document complex hooks with JSDoc comments
+
+## Referenced Template
+@hook-template.ts

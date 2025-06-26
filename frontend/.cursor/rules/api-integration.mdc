@@ -1,0 +1,24 @@
+---
+description: API Integration Standards and Error Handling
+globs:
+  - "src/api/**/*.ts"
+  - "src/services/**/*.ts"
+alwaysApply: false
+---
+
+# API Integration Standards
+
+## API Client Structure
+- Use Axios as the primary HTTP client
+- Create typed API functions in `src/api/` directory
+- Implement proper request/response interceptors
+- Handle authentication tokens consistently
+
+## Error Handling
+- Implement comprehensive error handling for all API calls
+- Use consistent error response format
+- Log errors appropriately for debugging
+- Provide meaningful error messages to users
+
+## Referenced Templates
+@api-client-template.ts

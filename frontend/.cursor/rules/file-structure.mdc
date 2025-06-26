@@ -1,0 +1,31 @@
+---
+description: File and directory organization standards
+globs:
+  - "src/**/*"
+alwaysApply: true
+---
+
+# File Structure Standards
+
+## Directory Organization
+```
+src/
+├── components/          # Reusable UI components
+│   ├── common/         # Generic, reusable components
+│   ├── layout/         # Layout-specific components
+│   └── ui/             # Basic UI elements
+├── pages/              # Top-level page components
+├── hooks/              # Custom React hooks
+├── context/            # React context providers
+├── api/                # API client and service functions
+├── utils/              # Utility functions and helpers
+├── types/              # TypeScript type definitions
+└── assets/             # Static assets
+```
+
+## File Naming Conventions
+- **Components**: PascalCase (`UserProfile.tsx`)
+- **Hooks**: camelCase with `use` prefix (`useUserData.ts`)
+- **Utilities**: camelCase (`dateHelpers.ts`)
+- **Types**: PascalCase (`UserTypes.ts`)
+- **Tests**: Same as source with `.test` or `.spec` suffix
