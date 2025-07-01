@@ -11,7 +11,8 @@ dist/
 .env
 
 # Flask environment
-.flaskenv
+.flaskenv/
+.venv/
 
 #Cursor default ignores
 package-lock.json

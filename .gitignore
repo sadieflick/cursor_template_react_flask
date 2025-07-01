@@ -1,5 +1,6 @@
 #### Flask environment ####
-.flaskenv
+.flaskenv/
+.venv/
 
 # Documentation
 .docs
